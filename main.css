@@ -1,0 +1,93 @@
+.clock {
+	background: url(images/station_clock-old.svg) center/95% no-repeat;
+  height: 50vw;
+	left: 50%;
+	margin: 0 auto;
+	max-height: 400px;
+	max-width: 400px;
+	position: absolute;
+  text-align: center;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+  width: 50vw;
+}
+
+.clock-face {
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.hand{
+	background: #000;
+	left: 50%;
+  position: absolute;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.hour-hand {
+  height: 20%;
+  top: 30%;
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  width: 2.5%;
+}
+
+.minute-hand {
+  height: 40%;
+  top: 10%;
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  width: 2%;
+}
+
+.second-hand {
+/*
+	-webkit-animation: rotate 60s infinite steps(60);
+	animation: rotate 60s infinite steps(60);
+*/
+  height: 45%;
+  top: 14%;
+  -webkit-transform-origin: 50% 80%;
+  transform-origin: 50% 80%;
+  width: 1%;
+  z-index: 1;
+}
+/*
+
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+  }
+}
+
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+  }
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
