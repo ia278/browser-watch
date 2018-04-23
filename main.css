@@ -11,23 +11,35 @@
 	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
   width: 50vw;
+	
 }
-
+.clock:after {
+  background: #000;
+  border-radius: 50%;
+  content: "";
+  height: 5%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 5%;
+  z-index: 10;
+}
 .clock-face {
 	bottom: 0;
+	display: none;
 	left: 0;
 	position: absolute;
 	right: 0;
 	top: 0;
 }
-
 .hand{
 	background: #000;
   position: absolute;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
 }
-
 .hour-hand {
   height: 20%;
 	left: 48.75%;
@@ -36,7 +48,6 @@
   transform-origin: 50% 100%;
   width: 2.5%;
 }
-
 .minute-hand {
   height: 40%;
 	left: 49%;
@@ -45,7 +56,6 @@
   transform-origin: 50% 100%;
   width: 2%;
 }
-
 .second-hand {
   height: 45%;	
   left: 49.5%;
@@ -54,4 +64,30 @@
   transform-origin: 50% 80%;
   width: 1%;
   z-index: 1;
+}
+
+button {
+  background-color: #FFF;
+  border: solid thin;
+	cursor: pointer;
+  display: inline-block;
+  font: 200 0.8rem "Raleway", sans-serif;
+  letter-spacing: 0.1rem;
+  margin: 10px 3px;
+  padding: 15px;
+  text-transform: uppercase;
+	width: 150px;
+}
+button:hover{
+  background-color: #000;
+  color: #FFF;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+.buttons {
+	margin: 0 auto;
+	text-align: center;
+}
+h2 {
+	text-align: center;
 }
